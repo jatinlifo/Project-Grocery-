@@ -12,7 +12,7 @@ function Home() {
                 <Navbar />
                 <Hero />
                 <Treanding />
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
     )

@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
     
     return (
-        <div className="md:px-30 md:py-7 mt-5 bg-gray-100">
+        <div className="md:px-30 md:py-7 mt-5 ">
             <h1 className="px-10 md:px-0">Delivery in</h1>
             <div className="flex justify-center gap-3 px-2 py-2 ">
                 <div className="Blinkit md:w-1/2 w-2/7  rounded-2xl  overflow-hidden">

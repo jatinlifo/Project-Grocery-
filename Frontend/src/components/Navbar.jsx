@@ -49,15 +49,18 @@ function Navbar() {
     }, []);
 
     return (
-        <div className='md:px-20 md:py-7 mx-auto px-5 py-4 bg-gray-100 w-full'>
+        <div className='md:px-20 md:py-7 mx-auto px-5 py-4 w-full'>
             <div className='md:flex  md:gap-10 md:items-center grid grid-cols-1'>
                 <div className='relative' ref={wrapperRef}>
-                    <div className='flex justify-between'>
-                        <h1>logo</h1>
+                    <div className='flex justify-between gap-2'>
+                        {/* <h1 className='font-bold'>logo</h1> */}
+                        <div className='py-1'>
+                            <img src="logo.jpg" className='w-25' alt="" />
+                        </div>
                         <div>
                             <button
                                 onClick={handleLocation}
-                                className='flex items-center gap-2 cursor-pointer text-sm text-right py-1'
+                                className='flex items-center gap-2 cursor-pointer text-sm text-right font-bold py-4  w-auto'
                                 aria-expanded={clickLocation}
                                 aria-controls='search-location'
                             >
@@ -66,7 +69,7 @@ function Navbar() {
                                 <p className='scale-y-[-1] inline-block px-1 text-lg text-gray-400'>^</p>
                             </button>
                         </div>
-                        <div className='py-1 text-2xl md:hidden'>
+                        <div className='py-7 text-2xl md:hidden'>
                             <CgProfile />
                         </div>
                     </div>
