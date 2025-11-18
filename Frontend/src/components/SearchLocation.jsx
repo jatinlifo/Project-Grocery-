@@ -111,21 +111,21 @@ function SearchLocation({ onLocationFetch }) {
     }
 
     return (
-        <div>
-            <div className="w-120 bg-gray-100 px-5 py-5 ">
-                <h1 className="text-xl ">
+        <div className=''>
+            <div className="w-auto md:w-100 bg-gray-100">
+                <h1 className="font-bold md:text-xl px-2 py-1 ">
                     🛒 Change Location
                 </h1>
-                <div className="flex justify-between px-3 py-8">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-1 px-3 py-8">
                     <button
                         onClick={handleGetCurrentLocation}
                         disabled={loading}
-                        className="px-4 py-2 bg-blue-700 rounded-xl font-bold text-white text-sm 
+                        className="px-2 py-2 bg-blue-700 w-full rounded-xl font-bold text-white text-xm md:text-sm
                         cursor-pointer"
                     >
                         {loading ? "Fetching location..." : "Choose Location"} </button>
                     <p>OR</p>
-                    <div className="border-2 border-gray-400 rounded-2xl">
+                    <div className="border-2 w-full border-gray-400 rounded-2xl">
                         <input
                             type="text"
                             value={query}

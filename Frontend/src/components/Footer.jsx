@@ -20,12 +20,13 @@ function Footer() {
     return (
 
         <>
-            <div className="md:px-30 md:py-7 md:mx-5 mt-5  w-auto  text-black ">
-                <div className="w-50">
-                    <img src="logo.jpg" alt="" />
+            <div className="md:px-30 md:py-1  w-auto mb-10 text-black ">
+                <div className="">
+                    {/* <img src="footer.jpg" alt="" /> */}
+                    <h1 className="text-2xl px-10 mt-2 md:px-0 font-bold mb-3">GROCERATE</h1>
                 </div>
                 <div className="flex md:justify-between justify-around">
-                    <div className="grid grid-cols-2 md:flex gap-2  md:gap-10 py-1 md:mr-5 md:text-lg text-[11px]">
+                    <div className="grid grid-cols-2 md:flex gap-3  md:gap-10 py-1 md:mr-5 md:text-xl text-lg">
                         <div className="hover:bg-black hover:text-white py-1 px-1 rounded-full cursor-pointer">
                             <FaXTwitter />
                         </div>
@@ -39,7 +40,7 @@ function Footer() {
                             <FaLinkedinIn />
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 md:flex md:gap-10 gap- 2 text-[9px] md:text-[11px] font-bold">
+                    <div className="grid grid-cols-3 md:flex md:gap-10 gap- 2 text-[11px] md:text-sm font-bold">
                         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             className="cursor-pointer ">
                             Home
@@ -86,8 +87,8 @@ function Footer() {
 
             {/* click about page  */}
             {openAbout && (
-                <div className="bg-black/50 fixed inset-0 flex items-center justify-center">
-                    <div className="bg-white  p-6 rounded-xl w-1/2 relative">
+                <div className="bg-black/50 px-5 fixed inset-0 flex items-center justify-center">
+                    <div className="bg-white px-5 py-4 rounded-xl w-full md:w-1/2 relative">
                         <button
                         className="absolute top-2 right-3 text-xl cursor-pointer"
                         onClick={() => setOpenAbout(false)}
@@ -101,8 +102,8 @@ function Footer() {
 
             {/* Click help page  */}
             {openHelp && (
-                <div className="bg-black/50 fixed inset-0 flex items-center justify-center">
-                    <div className="bg-white p-6 rounded-xl w-1/2 relative">
+                <div className="bg-black/50 px-5 fixed inset-0 flex items-center justify-center">
+                    <div className="bg-white px-5 py-4 rounded-xl w-full md:w-1/2 relative">
                         <button
                         className="absolute top-2 right-3 text-xl cursor-pointer"
                         onClick={() => setOpenHelp(false)}
